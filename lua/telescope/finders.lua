@@ -183,6 +183,7 @@ finders.new_oneshot_job = function(command_list, opts)
     entry_maker = opts.entry_maker or make_entry.gen_from_string(opts),
 
     cwd = opts.cwd,
+    env = opts.env,
     maximum_results = opts.maximum_results,
 
     fn_command = function()
