@@ -182,6 +182,7 @@ finders.new_oneshot_job = function(command_list, opts)
   return async_oneshot_finder {
     entry_maker = opts.entry_maker or make_entry.gen_from_string(opts),
 
+    print("Hello world"),
     cwd = opts.cwd,
     env = opts.env,
     maximum_results = opts.maximum_results,
